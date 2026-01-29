@@ -20,7 +20,17 @@ const handleSubmit = async(e) =>{
   e.preventDefault();
   try{
     const res = await axios.post("/api/users/login",formData);
+
+      const userData = {
+         id: res.data.user.id,      
+            username: res.data.user.username,
+            email: res.data.user.email,
+            token: res.data.user.token
+      }
+
         localStorage.setItem("token",res.data.token);
+        localStorage.setItem('user',JSON.stringify(userData))
+
         console.log(res.data);
         setUser(res.data);
         navigate('/');

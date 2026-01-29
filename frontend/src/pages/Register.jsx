@@ -28,6 +28,8 @@ const handleSubmit = async(e) =>{
       token: res.data.user.token
     }
         localStorage.setItem("token",res.data.token);
+        localStorage.setItem('user',JSON.stringify(userData))
+
         console.log(res.data);
         setUser(userData);
         navigate('/');
