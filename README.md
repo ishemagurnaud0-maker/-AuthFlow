@@ -42,7 +42,7 @@ Before you begin, ensure you have the following installed:
 
 ### 1. Clone the repository
 ```bash
-git clone https://github.com/yourusername/authflow.git
+git clone https://github.com/ishemagurnaud0-maker/authflow.git
 cd authflow
 ```
 
@@ -60,18 +60,6 @@ npm install
 
 ### 4. Environment Variables
 
-Create a `.env` file in the `backend` directory:
-```env
-MONGO_URI=mongodb://localhost:27017/authflow
-JWT_SECRET=your_super_secret_jwt_key_here
-PORT=3000
-```
-
-**For MongoDB Atlas:**
-```env
-MONGO_URI=mongodb+srv://username:password@cluster.mongodb.net/authflow?retryWrites=true&w=majority
-JWT_SECRET=your_super_secret_jwt_key_here
-PORT=3000
 ```
 
 ## 🚀 Running the Application
@@ -118,15 +106,6 @@ authflow/
     └── package.json
 ```
 
-## 🔐 API Endpoints
-
-### Authentication Routes
-
-| Method | Endpoint              | Description          | Auth Required |
-|--------|-----------------------|----------------------|---------------|
-| POST   | `/api/user/register`  | Register new user    | No            |
-| POST   | `/api/user/login`     | Login user           | No            |
-| GET    | `/api/user/me`        | Get current user     | Yes           |
 
 ### Request Examples
 
@@ -220,15 +199,7 @@ sudo systemctl start mongod
 ```bash
 Error: listen EADDRINUSE: address already in use :::3000
 ```
-**Solution:** Change the PORT in `.env` or kill the process using the port
-
-**CORS Errors:**
-Make sure your backend has CORS enabled:
-```javascript
-const cors = require('cors');
-app.use(cors({
-  origin: 'http://localhost:5173'
-}));
+**Solution:** Change the PORT in `.env` or kill the process using the port.
 ```
 
 ## 🚀 Deployment
@@ -255,8 +226,8 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 ## 👨‍💻 Author
 
 **Your Name**
-- GitHub: [@yourusername](https://github.com/yourusername)
-- LinkedIn: [Your LinkedIn](https://linkedin.com/in/yourprofile)
+- GitHub](https://github.com/ishemagurnaud0-maker)
+- LinkedIn: [Your LinkedIn](https://linkedin.com/in/)
 
 ## 🤝 Contributing
 
@@ -274,8 +245,7 @@ Give a ⭐️ if this project helped you!
 
 ## 📧 Contact
 
-For any questions or feedback, feel free to reach out at [your.email@example.com](mailto:your.email@example.com)
+For any questions or feedback, feel free to reach out at [ishemagurnaud0.email@gmail.com](mailto:ishemagurnaud0@gmail.com)
 
 ---
 
-**Made with ❤️ using the MERN Stack**

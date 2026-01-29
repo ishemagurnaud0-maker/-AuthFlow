@@ -13,7 +13,7 @@ const handleLogout =()=>{
   return (
     <nav className='bg-gray-800 p-4 text-white '>
       <div className='container mx-auto flex justify-between items-center'>
-        <Link to='/'className='text-white text-lg font-bold font-style- '>MERN AUTH</Link>
+        <Link to='/'className='text-white text-lg font-bold font-style- '>AUTH FLOW</Link>
         <div>
           {user ?( <button onClick={handleLogout} className="text-white bg-red-500 hover:bg-red-600 px-4 py-2 rounded">Logout</button>):(
             <>
