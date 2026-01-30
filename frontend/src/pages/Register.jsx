@@ -21,7 +21,7 @@ const handleSubmit = async(e) =>{
   e.preventDefault();
   try{
     const res = await axios.post("/api/users/register",formData);
-    const userData ={
+    const userData = {
       id: res.data.user.id,
       username: res.data.user.username,
       email: res.data.user.email,
